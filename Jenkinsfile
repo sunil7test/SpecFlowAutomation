@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                bat 'dotnet test'
+                bat 'dotnet test SpecFlowAutomation.csproj'
                 echo 'Build Completed'
             }
         }
