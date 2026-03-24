@@ -9,8 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code'){
             steps{
-                git url: 'https://github.com/sunil7test/SpecFlowAutomation.git'
-                branch: 'master'
+                git url: 'https://github.com/sunil7test/SpecFlowAutomation.git', branch: 'master'
             }
         } 
         stage('Build') {
